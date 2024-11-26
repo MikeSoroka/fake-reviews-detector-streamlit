@@ -8,8 +8,8 @@ from torch.nn.quantized.functional import threshold
 from torchtext.vocab import build_vocab_from_iterator
 
 # Ensure nltk resources are available
-# nltk.download('punkt')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 def predict_export(text, category, rating):
 
