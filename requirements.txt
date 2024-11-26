@@ -1,4 +1,4 @@
-torch==2.2.0
-torchtext==0.17.2
+torch==2.3.0
+torchtext==0.18.0
 nltk
 pandas
