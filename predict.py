@@ -7,13 +7,12 @@ from torch import nn
 from torch.nn.quantized.functional import threshold
 from torchtext.vocab import build_vocab_from_iterator
 
-# Ensure nltk resources are available
-nltk.download('punkt')
-nltk.download('stopwords')
-
 def predict_export(text, category, rating):
+    # Ensure nltk resources are available
+    nltk.download('punkt')
+    nltk.download('stopwords')
 
-    # Constantsc
+    # Constants
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     MODEL_DIRECTORY = "models/best_model_untuned.pt"
     MAX_LENGTH = 100  # Max length for padding text
