@@ -3,6 +3,10 @@ import time
 import threading
 from streamlit import text_input
 from predict import predict_export
+import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
 
 # Page Title and Introduction
 st.title("Computer-generated Reviews Detector")
