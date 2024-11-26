@@ -14,7 +14,7 @@ def predict_export(text, category, rating):
 
     # Constants
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    MODEL_DIRECTORY = "deployment_models/best_model_untuned_30ep.pt"
+    MODEL_DIRECTORY = "deployment_models/best_model_untuned.pt"
     MAX_LENGTH = 100  # Max length for padding text
 
 
