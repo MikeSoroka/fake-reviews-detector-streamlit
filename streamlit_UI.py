@@ -6,6 +6,7 @@ from predict import predict_export
 import nltk
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 # Page Title and Introduction

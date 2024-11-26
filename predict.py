@@ -9,8 +9,8 @@ from torchtext.vocab import build_vocab_from_iterator
 
 def predict_export(text, category, rating):
     # Ensure nltk resources are available
-    nltk.download('punkt')
-    nltk.download('stopwords')
+    # nltk.download('punkt')
+    # nltk.download('stopwords')
 
     # Constants
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
