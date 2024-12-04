@@ -45,7 +45,7 @@ def reset():
 text_input, rating = st.columns([4, 1])
 text_input = st.text_area("Enter review text: ", "", key="text")
 rating = st.selectbox("Enter rating:", options=[1, 2, 3, 4, 5], key="select_box")
-category = st.selectbox("Enter category:", options=["Kindle Store", "Books", "Home and Kitchen", "Pet Supplies", 5], key="select_category")
+category = st.selectbox("Enter category:", options=["Kindle Store", "Books", "Home and Kitchen", "Pet Supplies"], key="select_category")
 st.button("Reset", on_click=reset)
 
 st.markdown("""
