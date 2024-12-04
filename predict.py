@@ -147,7 +147,7 @@ def predict_export(text, category, rating):
 
     amazon_review = """ My son i love that toy is good quality"""
 
-    THRESHOLD = 0.3
+    THRESHOLD = 0.2
 
     print("Predicting...")
     prediction = predict_review(text, category, rating)
